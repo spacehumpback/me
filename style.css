@@ -1,195 +1,100 @@
-Ich kann Ihnen gerne ein Beispiel für eine einfache Webseite für diese Person in HTML, CSS und JavaScript geben. Hier ist ein Code-Beispiel:
-
-HTML:
-
-php
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Multipassionierte Person</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
-</head>
-<body>
-	<header>
-		<h1>Multipassionierte Person</h1>
-		<nav>
-			<ul>
-				<li><a href="#musik">Musik</a></li>
-				<li><a href="#fotografie">Fotografie</a></li>
-				<li><a href="#linux">Linux</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="musik">
-			<h2>Musik</h2>
-			<p>Ich bin ein Multiinstrumentalist und spiele gerne Holzblasinstrumente. Hier sind einige meiner Musikvideos:</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLmKs6zczymj7ATtCnJKxaKj07t9_LGKPf" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</section>
-		<section id="fotografie">
-			<h2>Fotografie</h2>
-			<p>Ich liebe es, analoge Schwarz-Weiß-Fotografie zu machen. Hier sind einige meiner Fotos:</p>
-			<div id="gallery">
-				<img src="images/photo1.jpg">
-				<img src="images/photo2.jpg">
-				<img src="images/photo3.jpg">
-				<img src="images/photo4.jpg">
-			</div>
-		</section>
-		<section id="linux">
-			<h2>Linux</h2>
-			<p>Ich bin ein Fan von Linux und mag es, mit verschiedenen Linux-Distributionen zu experimentieren. Hier sind einige meiner Lieblingsdistributionen:</p>
-			<ul>
-				<li>Ubuntu</li>
-				<li>Debian</li>
-				<li>Arch Linux</li>
-				<li>CentOS</li>
-			</ul>
-		</section>
-	</main>
-	<footer>
-		<p>Kontakt: multipassionierte.person@beispiel.com</p>
-	</footer>
-</body>
-</html>
-
-CSS:
-
-css
-
-body {
-	font-family: Arial, sans-serif;
-	color: #333;
-	background-color: #ddd;
-	margin: 0;
-	padding: 0;
-}
-
 header {
-	background-color: #444;
-	color: #fff;
-	padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--header-bg);
+  color: var(--header-text);
 }
 
-h1 {
-	margin: 0;
-	font-size: 2em;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+.nav {
+  display: flex;
+  gap: 1rem;
 }
 
-nav ul li {
-	margin-right: 20px;
+.nav a {
+  text-decoration: none;
+  color: var(--header-text);
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
 }
 
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
+.nav a:hover {
+  background-color: var(--link-bg);
+  color: var(--link-text);
+  border-radius: 0.5rem;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+  --bg-color: #2c2c2c;
+  --text-color: #fff;
+  --header-bg: #202020;
+  --header-text: #fff;
+  --link-bg: #444;
+  --link-text: #fff;
+}
+
+body.dark-mode header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
+
+body.dark-mode .nav a:hover {
+  background-color: var(--link-bg);
+  color: var(--link-text);
 }
 
 main {
-	padding: 20px;
-    body {
-        font-family: Arial, sans-serif;
-        color: #333;
-        background-color: #ddd;
-        margin: 0;
-        padding: 0;
-      }
-      
-      header {
-        background-color: #444;
-        color: #fff;
-        padding: 20px;
-      }
-      
-      h1 {
-        margin: 0;
-        font-size: 2em;
-      }
-      
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-      
-      nav ul li {
-        margin-right: 20px;
-      }
-      
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
-      }
-      
-      main {
-        padding: 20px;
-      }
-      
-      section {
-        margin-bottom: 40px;
-      }
-      
-      h2 {
-        margin-top: 0;
-      }
-      
-      iframe {
-        display: block;
-        margin: 0 auto;
-      }
-      
-      #gallery {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
-      #gallery img {
-        margin-right: 10px;
-        margin-bottom: 10px;
-      }
-      
-      footer {
-        background-color: #444;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      @media (max-width: 768px) {
-        header {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-        
-        nav {
-          margin-top: 20px;
-        }
-        
-        nav ul {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        
-        nav ul li {
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-        
-        #gallery img {
-          width: 100%;
-          margin-right: 0;
-        }
-      }
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.post {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--post-bg);
+  color: var(--text-color);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.post p {
+  margin-bottom: 1rem;
+}
+
+.post a {
+  color: var(--link-text);
+  font-weight: bold;
+}
+
+.post a:hover {
+  color: var(--header-bg);
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode .post {
+  background-color: #383838;
+  color: var(--text-color);
+}
+
+body.dark-mode .post a {
+  color: var(--link-text);
+}
+
+body.dark-mode .post a:hover {
+  color: var(--header-bg);
+}

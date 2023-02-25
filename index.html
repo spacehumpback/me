@@ -1,55 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Multiinstrumentalist, Fotograf und Linux-Fan</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Musik</a></li>
-          <li><a href="#">Fotografie</a></li>
-          <li><a href="#">Linux</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="hero">
-        <h1>Willkommen auf meiner Seite!</h1>
-        <p>Ich bin ein Multiinstrumentalist, Fotograf und Linux-Fan. Hier teile ich meine Leidenschaften und Projekte mit Ihnen.</p>
-      </section>
-      <section id="music">
-        <h2>Musik</h2>
-        <p>Ich spiele eine Vielzahl von Instrumenten, darunter Saxophon, Klarinette, Flöte und Bass. Hier können Sie einige meiner Aufnahmen anhören und sich über meine bevorstehenden Konzerte informieren.</p>
-        <div class="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multipassionate Artist</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="dark-light-mode.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <em>Enable Dark Mode!</em>
         </div>
-      </section>
-      <section id="photography">
-        <h2>Fotografie</h2>
-        <p>Ich bin auch leidenschaftlicher Fotograf und liebe es, Momente festzuhalten. Hier können Sie einige meiner Lieblingsbilder ansehen und mehr über meine Arbeit erfahren.</p>
-        <div class="gallery">
-          <img src="images/photo1.jpg" alt="Bild 1">
-          <img src="images/photo2.jpg" alt="Bild 2">
-          <img src="images/photo3.jpg" alt="Bild 3">
-          <img src="images/photo4.jpg" alt="Bild 4">
-        </div>
-      </section>
-      <section id="linux">
-        <h2>Linux</h2>
-        <p>Ich bin ein begeisterter Linux-Benutzer und liebe es, an Open-Source-Projekten zu arbeiten. Hier können Sie mehr über meine Erfahrungen und Projekte erfahren und sich mit anderen Linux-Benutzern vernetzen.</p>
-        <div class="forum">
-          <h3>Linux-Forum</h3>
-          <p>Treffen Sie andere Linux-Benutzer und diskutieren Sie die neuesten Entwicklungen und Probleme.</p>
-          <a href="#">Zum Forum</a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023 Multiinstrumentalist, Fotograf und Linux-Fan
-    </footer>
-  </body>
-</html>
+        
+        
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Linux</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Multipassionate Artist</h1>
+      <p>Welcome to my website. I'm a musician, photographer, Linux enthusiast, and more. Explore my work and learn more about me.</p>
+      <a href="#" class="cta">Learn More</a>
+    </section>
+
+    <section id="latest-photos">
+      <h2>Latest Photos</h2>
+      <div class="photo-grid">
+        <img src="https://via.placeholder.com/200x200" alt="Photo 1">
+        <img src="https://via.placeholder.com/200x200" alt="Photo 2">
+        <img src="https://via.placeholder.com/200x200" alt="Photo 3">
+        <img src="https://via.placeholder.com/200x200" alt="Photo 4">
+      </div>
+    </section>
+
+    <section id="featured-video">
+      <h2>Featured Video</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog-posts">
+        <article>
+          <h3>My First Blog Post</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac arcu quis nibh malesuada bibendum in id libero. Curabitur malesuada justo a finibus bibendum. Nam euismod purus quis lectus euismod dapibus.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article>
+          <h3>My Second Blog Post</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac arcu quis nibh malesuada bibendum in id libero. Curabitur malesuada justo a finibus bibendum. Nam euismod purus quis lectus euismod dapibus.</p>
+          <a href="#">Read More</a>
+        </article>
+        <article>
+          <h3>My Third Blog Post</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac arcu quis nibh malesuada bibendum in id libero. Curabitur malesuada justo a finibus bibendum. Nam euismod purus quis lectus euismod dapibus.</p>
+          <a href="#">Read More</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
