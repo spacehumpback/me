@@ -12,6 +12,9 @@ php
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+body {
+  text-align: center;
+}
 	<header>
 		<h1>Multipassionierte Person</h1>
 		<nav>
