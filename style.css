@@ -62,6 +62,15 @@ CSS:
 
 css
 
+		@font-face {
+  font-family: 'Josefin Slab';
+  src: url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+}
+
+body {
+  font-family: 'Josefin Slab', serif;
+}	
+			
 body {
 	font-family: Arial, sans-serif;
 	color: #333;
